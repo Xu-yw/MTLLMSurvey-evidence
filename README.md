@@ -1,31 +1,31 @@
-# 阶段证据目录
+# Stage Evidence Package
 
-本目录按文献检索与筛选阶段组织，可独立阅读，所有文件引用均指向包内材料。
+This package is organized by the stages of literature search and screening. It can be read on its own, and all file references point to materials inside the package.
 
-04 阶段以 `最终纳入文献清单.xlsx` 确定的 110 篇一手研究为准。“最终论文清单”已收齐 110 份对应 PDF。
+Stage 04 is based on the 110 primary studies listed in `Final_Included_Studies_110.xlsx`. The `Final_Papers` folder contains the corresponding 110 PDFs.
 
-## 目录结构
+## Directory Structure
 
-- `01_六库检索与去重`
-  - `01_查询命中946`：六库查询命中汇总、逐条查询明细、检索词与范围及结果截图。
-  - `02_库内唯一392`：库内去重后的 392 条记录及去重依据。
-  - `03_跨库唯一252`：跨库去重后的 252 条记录及归并依据。
-- `02_TAK初筛`：252 篇的初筛结果汇总及通过初筛的 120 篇清单。
-- `03_滚雪球`：冻结六库检索后追加的滚雪球阶段，列示 18 篇补充候选文献，并汇总 138 篇候选文献的现有 PDF。
-- `04_人工交叉验证与最终纳入`：列出最终纳入的 110 篇一手研究及其年份、发表类型统计；“最终论文清单”文件夹存放对应的 110 份 PDF。
+- `01_Database_Search_and_Deduplication`
+  - `01_Query_Hits_946`: query hit summary for the six databases, per-query details, search strings and scope, and result screenshots.
+  - `02_Within-Database_Unique_392`: the 392 records remaining after within-database deduplication, with deduplication keys.
+  - `03_Cross-Database_Unique_252`: the 252 records remaining after cross-database deduplication, with merge evidence.
+- `02_TAK_Screening`: screening results for the 252 records and the list of 120 records retained.
+- `03_Snowballing`: the snowballing stage added after the database search was frozen; lists the 18 supplementary candidates and archives the available PDFs of all 138 candidates.
+- `04_Cross-Validation_and_Final_Inclusion`: lists the 110 included primary studies with year and publication-type statistics; the `Final_Papers` folder holds the corresponding 110 PDFs.
 
-## 阅读说明
+## Reading Guide
 
-六库查询命中阶段从 `01_六库检索与去重/01_查询命中946/946条查询命中证据.xlsx` 开始阅读。工作簿包含“命中汇总”“查询明细”“检索词与范围”三张表，截图位于同目录的“截图”文件夹。
+The query-hit stage starts at `01_Database_Search_and_Deduplication/01_Query_Hits_946/Query_Hits_946.xlsx`. The workbook contains three sheets: "Hit Summary", "Query Details" and "Search Strings and Scope". Screenshots are in the `screenshots` folder in the same directory; the result counts shown in the screenshots add up to 946.
 
-库内去重阶段从 `01_六库检索与去重/02_库内唯一392/392条库内唯一记录证据.xlsx` 开始阅读。工作簿包含“去重汇总”和“论文清单”两张表。392 条记录保留库间重复，跨库去重在下一阶段处理。
+The within-database deduplication stage starts at `01_Database_Search_and_Deduplication/02_Within-Database_Unique_392/Within-Database_Unique_392.xlsx`. The workbook contains two sheets: "Deduplication Summary" and "Record List". The 392 records keep duplicates across databases; cross-database deduplication is handled in the next stage.
 
-跨库去重阶段从 `01_六库检索与去重/03_跨库唯一252/252条跨库唯一记录证据.xlsx` 开始阅读。工作簿包含“去重汇总”“唯一记录清单”和“归并明细”三张表，展示 392 条记录归并为 252 条的对应关系。
+The cross-database deduplication stage starts at `01_Database_Search_and_Deduplication/03_Cross-Database_Unique_252/Cross-Database_Unique_252.xlsx`. The workbook contains three sheets: "Deduplication Summary", "Unique Records" and "Merge Details", showing how the 392 records were merged into 252.
 
-TAK 初筛阶段从 `02_TAK初筛/TAK初筛-120篇.xlsx` 开始阅读。工作簿包含“筛选汇总”和“初筛清单”两张表。汇总展示 252 篇中保留 120 篇、排除 132 篇的结果；初筛清单仅列出通过的 120 篇，包含主记录 ID、论文标题、来源数据库、初筛结论和文献链接。
+The TAK screening stage starts at `02_TAK_Screening/TAK_Screening_120.xlsx`. The workbook contains two sheets: "Screening Summary" and "Screening List". The summary shows that 120 of the 252 records were retained and 132 were excluded; the screening list contains only the 120 retained records, with primary record ID, title, source databases, screening decision and link.
 
-滚雪球阶段从 `03_滚雪球/18篇滚雪球补充文献清单.xlsx` 开始阅读。清单列出 18 篇补充文献，包含补充编号、论文标题、年份、文献链接和备注（SB-010 注明版本关系）；最终纳入结果在后续复核阶段确定。
+The snowballing stage starts at `03_Snowballing/Snowballing_Additions_18.xlsx`. The list contains the 18 supplementary records, with snowballing ID, title, year, link and note (SB-010 records its version relation); final inclusion was determined in the subsequent review stage.
 
-`03_滚雪球/138（120+18）篇候选文献` 文件夹已归档 137 篇 PDF，文件名以 MU 或 SB 编号对应前述清单。尚缺 1 篇的下载入口列在同目录的 `待下载文献清单.xlsx` 中。
+The `03_Snowballing/138_Candidates_(120+18)` folder archives 137 PDFs, whose file names are prefixed with the MU or SB ID from the lists above. The download entry for the one missing record is given in `Pending_Downloads.xlsx` in the same folder; records whose full text cannot be obtained are excluded later.
 
-`04_人工交叉验证与最终纳入/最终纳入文献清单.xlsx` 列出最终纳入的 110 篇一手研究的标题、年份和发表信息（已正式发表的按正式版著录，年份取正式卷期或会议年份）；同目录的 `110篇文献统计.md` 汇总年份分布、发表类型分布、年份×类型交叉及主要发表渠道。“最终论文清单”文件夹收齐 110 份对应 PDF，沿用“年份_题名”的文件名格式。已正式发表的文献均归档正式版 PDF，仅以下两篇例外：MU-0105（QUATIC 2024，DOI 10.1007/978-3-031-70245-7_9）与 MU-0140（NLDB 2025，DOI 10.1007/978-3-031-97141-9_17）的正式版无法获取，归档其 arXiv 版本（分别为 arXiv:2401.17019v3 与 arXiv:2504.18827v3），文献信息与引用仍以正式版为准。
+`04_Cross-Validation_and_Final_Inclusion/Final_Included_Studies_110.xlsx` lists the title, year and publication information of the 110 included primary studies (formally published studies are recorded by their published version, with the year taken from the journal volume or the conference year). `Statistics_110.md` in the same folder summarizes the distribution by year, by publication type, year × type, and the main publication venues. The `Final_Papers` folder contains the 110 corresponding PDFs, named in the "Year_Title" format. All formally published studies are archived in their published version, with two exceptions: the published versions of MU-0105 (QUATIC 2024, DOI 10.1007/978-3-031-70245-7_9) and MU-0140 (NLDB 2025, DOI 10.1007/978-3-031-97141-9_17) could not be obtained, so their arXiv versions are archived instead (arXiv:2401.17019v3 and arXiv:2504.18827v3, respectively); bibliographic information and citations follow the published versions.
