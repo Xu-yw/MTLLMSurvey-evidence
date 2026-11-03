@@ -1,6 +1,6 @@
 # Stage Evidence Package
 
-This package is organized by the stages of literature search and screening. It can be read on its own, and all file references point to materials inside the package.
+This package is organized by the stages of literature search, screening and quality assessment. It can be read on its own, and all file references point to materials inside the package.
 
 Stage 04 is based on the 110 primary studies listed in `Final_Included_Studies_110.xlsx`. The `Final_Papers` folder contains the corresponding 110 PDFs.
 
@@ -13,6 +13,7 @@ Stage 04 is based on the 110 primary studies listed in `Final_Included_Studies_1
 - `02_TAK_Screening`: screening results for the 252 records and the list of 120 records retained.
 - `03_Snowballing`: the snowballing stage added after the database search was frozen; lists the 18 supplementary candidates and archives the available PDFs of all 138 candidates.
 - `04_Cross-Validation_and_Final_Inclusion`: lists the 110 included primary studies with year and publication-type statistics; the `Final_Papers` folder holds the corresponding 110 PDFs.
+- `05_Quality_Assessment`: quality scores of the 110 included studies on empirical rigor, reporting transparency and reproducibility, with a rationale for each study.
 
 ## Reading Guide
 
@@ -29,3 +30,5 @@ The snowballing stage starts at `03_Snowballing/Snowballing_Additions_18.xlsx`. 
 The `03_Snowballing/138_Candidates_(120+18)` folder archives 137 PDFs, whose file names are prefixed with the MU or SB ID from the lists above. The download entry for the one missing record is given in `Pending_Downloads.xlsx` in the same folder; records whose full text cannot be obtained are excluded later.
 
 `04_Cross-Validation_and_Final_Inclusion/Final_Included_Studies_110.xlsx` lists the title, year and publication information of the 110 included primary studies (formally published studies are recorded by their published version, with the year taken from the journal volume or the conference year). `Statistics_110.md` in the same folder summarizes the distribution by year, by publication type, year × type, and the main publication venues. The `Final_Papers` folder contains the 110 corresponding PDFs, named in the "Year_Title" format. All formally published studies are archived in their published version, with two exceptions: the published versions of MU-0105 (QUATIC 2024, DOI 10.1007/978-3-031-70245-7_9) and MU-0140 (NLDB 2025, DOI 10.1007/978-3-031-97141-9_17) could not be obtained, so their arXiv versions are archived instead (arXiv:2401.17019v3 and arXiv:2504.18827v3, respectively); bibliographic information and citations follow the published versions.
+
+The quality-assessment stage starts at `05_Quality_Assessment/Quality_Assessment_110.xlsx`. The workbook contains four sheets: "Instructions", "Rubric", "Scores" and "Summary". Each study is scored 0–2 on empirical rigor, reporting transparency and reproducibility (total 0–6). The Scores sheet gives the three scores, the total, the band and a rationale for each of the 110 studies; the Summary sheet reports the median total score, the number of studies in each band and the mean score of peer-reviewed studies, preprints and theses. Quality assessment was performed after study selection and does not add or remove studies; the Instructions sheet describes how the scores were produced.
