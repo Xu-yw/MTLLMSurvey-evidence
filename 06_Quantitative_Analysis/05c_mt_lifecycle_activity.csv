@@ -1,0 +1,9 @@
+﻿MT lifecycle activity (coded label),Count,Share
+"(not applicable, MT-for-LLMs branch)",71,64.5%
+Automated MR Discovery,10,9.1%
+Input Transformation & Test Implementation,9,8.2%
+Agentic & Closed-Loop Orchestration,9,8.2%
+Automated MR Discovery; Input Transformation & Test Implementation,3,2.7%
+Input Transformation & Test Implementation; Agentic & Closed-Loop Orchestration,3,2.7%
+Automated MR Discovery; Input Transformation & Test Implementation; Agentic & Closed-Loop Orchestration,3,2.7%
+Automated MR Discovery; Agentic & Closed-Loop Orchestration,2,1.8%

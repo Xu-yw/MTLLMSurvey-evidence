@@ -1,0 +1,13 @@
+﻿Metric family,Papers (>=2 occurrences in body),Share of 110
+Accuracy,62,56.4%
+Precision / Recall / F1,41,37.3%
+False-positive rate,27,24.5%
+Cost / efficiency,24,21.8%
+Coverage,22,20.0%
+MR violation / failure rate,18,16.4%
+Statistical tests / correlation,13,11.8%
+Fault / bug detection rate,13,11.8%
+Human evaluation,12,10.9%
+pass@k,4,3.6%
+Similarity scores (BLEU / ROUGE / BERTScore),1,0.9%
+(none of the families above),11,10.0%

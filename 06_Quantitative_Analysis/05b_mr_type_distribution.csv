@@ -1,0 +1,6 @@
+﻿MR type,Papers (>=2 occurrences in body),Share of 110
+LLMs used to generate / discover MRs,54,49.1%
+Semantic-preserving input transformation,26,23.6%
+Equivalence / invariance checking,24,21.8%
+Human-specified or domain-knowledge MRs,17,15.5%
+(none of the types above),35,31.8%

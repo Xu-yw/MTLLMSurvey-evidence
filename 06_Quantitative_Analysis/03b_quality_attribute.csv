@@ -1,0 +1,7 @@
+﻿Quality attribute (multi-label),Count,Share
+(not labelled),57,51.8%
+Robustness & Consistency,25,22.7%
+Fairness & Bias Evaluation,12,10.9%
+Factual Hallucination Detection,10,9.1%
+Fairness & Bias Evaluation; Robustness & Consistency,3,2.7%
+Factual Hallucination Detection; Robustness & Consistency,3,2.7%

@@ -1,0 +1,10 @@
+﻿Model family,Papers (>=3 occurrences in body),Share of 110
+GPT-4 family (GPT-4 / 4o / 4V),45,40.9%
+GPT-3.5 / ChatGPT,37,33.6%
+LLaMA family (incl. Vicuna / Alpaca / Mistral),33,30.0%
+Multimodal / vision-language (GPT-4V / LLaVA / Gemini),13,11.8%
+Other proprietary (Claude / PaLM / Bard),13,11.8%
+Code-specialised LLMs (StarCoder / CodeLlama / CodeGen),10,9.1%
+Chinese open-source (Qwen / ChatGLM / Baichuan),9,8.2%
+GPT-3 / Codex,2,1.8%
+(none of the families above),24,21.8%
