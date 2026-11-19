@@ -1,0 +1,27 @@
+﻿dimension,label,comparison,before,after,added_studies,removed_studies
+MR,answer consistency,category membership,2,1,,72
+MR,antonymy relation,category membership,0,1,46,
+MR,ethical judgement consistency,category membership,1,0,,66
+MR,factual validation of mutations,category membership,1,0,,46
+MR,invariance filtering,category membership,1,0,,84
+MR,prompt modification with code held fixed,category membership,0,1,6,
+MR,prompt paraphrase,category membership,1,0,,6
+MR,road-type invariance,category membership,1,0,,32
+MR,synonymy relation,category membership,0,1,46,
+MR construction,LLM-assisted MR generation,category membership,13,12,,7
+MR construction,LLM-assisted formalization of given natural-language properties,category membership,0,1,7,
+anchored studies,MR,category membership,97,94,,32; 66; 72
+anchored studies,statistical procedure,category membership,0,1,108,
+metric,confirmed-positive share among flags (author-labelled TPR),category membership,0,3,72; 89; 97,
+metric,multiple-comparison correction,category membership,1,0,,108
+metric,true-positive rate,category membership,3,1,,72; 89
+model or implemented system,ChatGPT,category membership,7,8,107,
+model or implemented system,Difference Coherence Estimator,category membership,0,1,32,
+model or implemented system,Kimi,category membership,1,2,104,
+model or implemented system,QuestEval,category membership,0,1,19,
+model or implemented system,SelfCheckGPT,category membership,0,2,32; 46,
+model or implemented system,SimCSE,category membership,0,1,72,
+model or implemented system,SummaC-conv,category membership,0,1,19,
+model or implemented system,SummaC-zs,category membership,0,1,19,
+statistical procedure,Bonferroni correction,category membership,0,1,108,
+synthesis,ChatGPT or GPT-3.5,category membership,32,33,107,

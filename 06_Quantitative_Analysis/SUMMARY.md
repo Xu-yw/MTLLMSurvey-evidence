@@ -1,116 +1,16 @@
-# Summary — Six Quantitative Dimensions
+# Quantitative summary
 
-All figures are computed from the 110 included studies. Dimensions 1–3 use the coded metadata, dimensions 4–6 use body-text extraction with the thresholds documented in `README.md`. Per-study evidence for dimensions 4–6 is in the corresponding `*_mentions_per_study.csv` files.
+**(1) Publication trends.** Of the 110 included studies, 41 appeared in 2025 and 46 in 2026. Together these years account for 87 studies (79.09%). In 2023, three studies addressed MT for LLMs and four addressed LLMs for MT. In 2026, 29 addressed only the former direction, 11 only the latter, and six contributed to both. Counting these six in each applicable direction gives 35 and 17, respectively. The 2026 figure covers the survey search window.
 
-## 1. Publication trends by category
+**(2) Publication venues.** The corpus contains 49 conference papers, 26 journal articles, six workshop papers, 27 preprints and two theses. The first three groups account for 81 studies (73.6%). ICSE contributed eight studies, ASE six, and COMPSAC and PACMSE five each. These figures describe publication outlets; study quality is assessed separately using the quality rubric.
 
-Year × research direction:
+**(3) Application areas.** In the MT-for-LLMs branch, 53 studies carry a quality-attribute label and 37 an application-domain label. Fourteen carry both, giving 76 distinct studies across these perspectives. Robustness and consistency appear in 31 studies, fairness and bias in 15, and factual hallucination detection in 13. Among the domain labels, dialogue and agentic systems account for 21 studies and code generation and repair for 16. The overlap matters because a study of a dialogue system may also test robustness.
 
-| Year | MT for LLMs | LLMs for MT | Both | Total |
-|---|---:|---:|---:|---:|
-| 2020 | 1 | 0 | 0 | 1 |
-| 2023 | 3 | 4 | 0 | 7 |
-| 2024 | 11 | 3 | 1 | 15 |
-| 2025 | 27 | 9 | 5 | 41 |
-| 2026 | 29 | 11 | 6 | 46 |
-| **Total** | **71** | **27** | **12** | **110** |
+**(4) Models used.** The archived papers document experimental use of an OpenAI-labelled model or ChatGPT in at least 87 studies, Llama in at least 40, Qwen in at least 25, Claude in at least 18 and Gemini in at least 12. Within the 87 documented OpenAI-labelled or ChatGPT studies, 56 are coded for the GPT-4 family and 33 for ChatGPT or GPT-3.5. The two sets overlap. Study 106 contributes to the OpenAI and Claude counts on the basis of the reported third-party gateway aliases. The authors could not independently verify the upstream checkpoints (pp. 2, 7). The unit is a paper, and the roles include targets, baselines, generators and evaluators. For example, study 33 uses Claude 3 Opus to filter generated questions for semantic consistency (p. 4), and study 56 uses GPT-4 to generate paraphrases (p. 9). Family boundaries also affect the counts. Including separately coded CodeLlama systems raises the Llama count to at least 46. Including CodeQwen, QwQ and explicitly named R1-Qwen variants raises the Qwen count to at least 26. Within an individual study, an explicitly enumerated panel permits a firmer statement. Study 76 evaluated 60 model entries, counting dated releases as the authors did (p. 3). Only the two entries that passed all the exams, GPT-5-2025-08-07 and Gemini-3-flash-preview, proceeded to the experiment with six transformations (pp. 7–8). Study 55 could run only one of the ICD coding systems it considered, PLM-ICD (p. 3).
 
-Year × primary function:
+**(5) Metamorphic relations.** At least 11 studies used code transformations designed to preserve program semantics. In study 15, for example, the transformations range from renaming variables to rewriting loops while preserving program meaning (p. 3). At least 11 studies replaced one demographic attribute or its proxy with another. Study 55 distinguishes swapping a patient’s recorded sex from removing gender terms, and reports separate outcomes for the two operations (p. 5). Relations can also be counted exactly within a specified design. Study 94 defines four multimodal relations and applies each to its input pairs (p. 4). Construction is a separate question. The passage evidence records LLM-assisted MR generation in 12 of the 110 studies (10.9%). The survey taxonomy assigns 18 papers to Automated MR Discovery. Study 20 starts from a test that already encodes an MR and constructs the input transformation, whereas study 93 generates follow-up test cases under prescribed relations. Counting both procedures as discovery would obscure the difference.
 
-| Year | Verify | Validate | Assess | Understand | Not labelled | Total |
-|---|---:|---:|---:|---:|---:|---:|
-| 2020 | 1 | 0 | 0 | 0 | 0 | 1 |
-| 2023 | 0 | 0 | 2 | 0 | 5 | 7 |
-| 2024 | 2 | 3 | 3 | 1 | 6 | 15 |
-| 2025 | 3 | 8 | 8 | 0 | 22 | 41 |
-| 2026 | 2 | 8 | 13 | 5 | 18 | 46 |
-| **Total** | **8** | **19** | **26** | **6** | **51** | **110** |
+**(6) Evaluation metrics.** At least 38 studies reported accuracy, at least 26 reported precision, recall or F1, and at least 32 reported how often an expected relation was violated under their own test criteria. The last count includes alternative names when the definition identifies the same event. Study 55 calls it the *failure rate of an MR* and divides failed inputs by all inputs tested for that MR (p. 3). The studies use different tasks and denominators. At least 11 papers use the term *false-positive rate* or *FP rate* when presenting or discussing their experimental results. Study 24 measures the share of correct programs flagged (pp. 3–4), whereas study 95 samples 1,000 flagged errors, finds nine false alarms and calls the resulting 0.9% an FP rate (p. 22). These numbers cannot be pooled as estimates of the same probability. At least three studies (40, 47 and 80) reported a result labelled pass@1 or pass@5. Study 28 instead reports Partial Pass@k, which gives credit for passing a subset of test cases (pp. 7–8). Other measures address different experimental questions. Study 34 assesses proposed MRs with three measures of legality, correctness and innovation (p. 6), and study 20 evaluates the resulting tests with line coverage and mutation score.
 
-Year × application domain:
 
-| Year | Code Generation & Repair | Dialogue & Agentic Systems | Not labelled | Total |
-|---|---:|---:|---:|---:|
-| 2020 | 0 | 0 | 1 | 1 |
-| 2023 | 2 | 0 | 5 | 7 |
-| 2024 | 1 | 1 | 13 | 15 |
-| 2025 | 7 | 6 | 28 | 41 |
-| 2026 | 6 | 14 | 26 | 46 |
-| **Total** | **16** | **21** | **73** | **110** |
-
-The MT-for-LLMs direction grows from 3 studies in 2023 to 29 in 2026, a factor of roughly ten, and supplies 64.5% of the corpus. The LLMs-for-MT direction grows more slowly, from 4 to 11, and both-direction studies only appear from 2024 onward. Assess is the only functional category that expands in the final year (13 studies in 2026 against 8 in 2025), while Validate plateaus at 8.
-
-## 2. Venue distribution
-
-| Venue | Count | Share |
-|---|---:|---:|
-| ICSE | 8 | 7.3% |
-| ASE | 6 | 5.5% |
-| COMPSAC | 5 | 4.5% |
-| PACMSE (FSE/ISSTA) | 5 | 4.5% |
-| IEEE AITest | 4 | 3.6% |
-| IST | 4 | 3.6% |
-| PACMPL (OOPSLA) | 3 | 2.7% |
-| JSS | 3 | 2.7% |
-| IEEE TSE | 3 | 2.7% |
-| ACL, ISET, ICST Workshops, FORGE, APSEC, ACM TOSEM | 2 each | 1.8% each |
-
-Publication types: journal 26 (23.6%), conference 49 (44.5%), workshop 6 (5.5%), arXiv 26 (23.6%), other preprint 1 (0.9%), thesis 2 (1.8%). Peer-reviewed venues together account for 81 studies (73.6%).
-
-## 3. Application-domain distribution
-
-| Application domain | Count | Share |
-|---|---:|---:|
-| Dialogue & Agentic Systems | 21 | 19.1% |
-| Code Generation & Repair | 16 | 14.5% |
-| Not labelled | 73 | 66.4% |
-
-Only one third of the corpus names a concrete application domain. Dialogue & Agentic Systems overtakes Code Generation & Repair in 2026 (14 against 6), which reverses the pattern of 2023, when code generation led 2 to 0.
-
-## 4. LLM model distribution
-
-| Model family | Papers | Share of 110 |
-|---|---:|---:|
-| GPT-4 family (GPT-4 / 4o / 4V) | 45 | 40.9% |
-| GPT-3.5 / ChatGPT | 37 | 33.6% |
-| LLaMA family (incl. Vicuna / Alpaca / Mistral) | 33 | 30.0% |
-| Multimodal / vision-language (GPT-4V / LLaVA / Gemini) | 13 | 11.8% |
-| Other proprietary (Claude / PaLM / Bard) | 13 | 11.8% |
-| Code-specialised (StarCoder / CodeLlama / CodeGen) | 10 | 9.1% |
-| Chinese open-source (Qwen / ChatGLM / Baichuan) | 9 | 8.2% |
-| GPT-3 / Codex | 2 | 1.8% |
-| None of the above | 24 | 21.8% |
-
-Proprietary models dominate. GPT-4 and ChatGPT appear in 45 and 37 studies respectively, while the largest open-source family, LLaMA, reaches 33. Code-specialised and Chinese open-source models remain marginal at 10 and 9 studies, which is consistent with the small number of studies that name a code-generation domain. Multi-label, so totals exceed 110.
-
-## 5. Types of MRs across studies
-
-| MR type | Papers | Share of 110 |
-|---|---:|---:|
-| LLMs used to generate or discover MRs | 54 | 49.1% |
-| Semantic-preserving input transformation | 26 | 23.6% |
-| Equivalence or invariance checking | 24 | 21.8% |
-| Human-specified or domain-knowledge MRs | 17 | 15.5% |
-| None of the above | 35 | 31.8% |
-
-Coded MT lifecycle activity for the 39 studies that apply MT to software artefacts: automated MR discovery 10, input transformation and test implementation 9, agentic and closed-loop orchestration 9, with the remaining 11 combining two or three activities.
-
-The dominant relation type is LLM-generated. Roughly three times as many studies let a model propose the relation (54) as rely on human-specified or domain-knowledge relations (17), which is the empirical counterpart of the LLMs-for-MT argument in Section 5.
-
-## 6. Comparison of evaluation metrics
-
-| Metric family | Papers | Share of 110 |
-|---|---:|---:|
-| Accuracy | 62 | 56.4% |
-| Precision / recall / F1 | 41 | 37.3% |
-| False-positive rate | 27 | 24.5% |
-| Cost / efficiency | 24 | 21.8% |
-| Coverage | 22 | 20.0% |
-| MR violation or failure rate | 18 | 16.4% |
-| Statistical tests or correlation | 13 | 11.8% |
-| Fault or bug detection rate | 13 | 11.8% |
-| Human evaluation | 12 | 10.9% |
-| pass@k | 4 | 3.6% |
-| Similarity scores | 1 | 0.9% |
-| None of the above | 11 | 10.0% |
-
-Accuracy-based reporting is dominant, and 41 studies also report precision, recall or F1. Only 18 studies report an MR violation or failure rate, the metric that actually quantifies what a metamorphic test detects, and only 13 report a fault or bug detection rate. Human evaluation appears in 12 studies and pass@k, the standard metric for code tasks, in 4. The metric vocabulary is therefore concentrated on task-level accuracy rather than on testing effectiveness, which supports the call for standard metrics in Section 6.6.
+[Trace each headline count](full_text_review/claim_audit.csv)
