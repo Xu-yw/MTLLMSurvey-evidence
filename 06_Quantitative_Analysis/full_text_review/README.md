@@ -1,6 +1,6 @@
 # Full-text evidence for Comment 2.5
 
-This review covers the 110 archived PDFs in Stage 04, using the corpus frozen at commit `b020362`. It supplies evidence for model use, metamorphic relations (MRs) and reported evaluation measures. Study numbers follow the Final Labels workbook. PDF pages start at 1 and include any cover or publisher pages.
+This review covers the 110 archived PDFs in Stage 04. It supplies evidence for model use, metamorphic relations (MRs) and reported evaluation measures. Study numbers follow the Final Labels workbook. PDF pages start at 1 and include any cover or publisher pages.
 
 ## Checking a count
 
@@ -28,7 +28,7 @@ Study 8 evaluates scientific-variable extraction upstream of MR discovery. Study
 
 ## Second review
 
-The review used the 110 PDFs frozen at b020362. All 1,734 PDF pages were text-extracted in page order. The reviewer inspected experimental descriptions, named panels, MR definitions, outcome measures, result tables and ambiguous wording across the papers. Fourteen pages with sparse text were also rendered and visually checked. The coverage file distinguishes pages extracted from pages cited. Page extraction and passage verification do not certify an exhaustive line-by-line reading of every article or a second independent coder.
+The review used the 110 archived PDFs. All 1,734 PDF pages were text-extracted in page order. The reviewer inspected experimental descriptions, named panels, MR definitions, outcome measures, result tables and ambiguous wording across the papers. Fourteen pages with sparse text were also rendered and visually checked. The coverage file distinguishes pages extracted from pages cited. Page extraction and passage verification do not certify an exhaustive line-by-line reading of every article or a second independent coder.
 
 The headline counts represent distinct study records. An explicit numeric baseline result can count even if it is secondary. Threshold optimization alone does not establish a reported F1 result. CodeLlama, CodeQwen, QwQ and R1-Qwen have separate labels. Explicitly named backbones can be recorded when a result table identifies them. Two additional unions make the effect of including the specified derivatives reproducible. They do not purport to identify all architectural descendants. Study 38's attributed Claude answer is a worked example outside the main experimental comparison. WOGAN and Botium are implemented components, not LLMs.
 
@@ -39,7 +39,7 @@ The broad false-positive count requires an experimental result or plot explicitl
 * `review_coverage.csv` tracks extraction and evidence coverage for every PDF.
 * `claim_audit.csv` lists the English draft's empirical headline counts, study memberships, changes, and the status of each estimate.
 * `bounded_study_counts.csv` records exact statements within an explicitly defined experimental scope.
-* `verify_evidence.py` checks the released rows against the PDFs and the frozen PDF hashes. Run it with a path to the evidence repository and PyMuPDF installed. Run `python3 rebuild_counts.py` to reproduce the distinct-study totals.
+* `verify_evidence.py` checks the released rows against the PDFs and their recorded hashes. Run it with a path to the evidence repository and PyMuPDF installed. Run `python3 rebuild_counts.py` to reproduce the distinct-study totals.
 
 ## Verification notes
 
@@ -57,10 +57,10 @@ Each of the 110 archived PDFs was reopened and its hash checked. The texts were 
 
 ## Entry-level review of 19 November
 
-The frozen public Stage 06 release uses regular expressions. Its 04a/05a/06a tables give occurrence counts and a short context window around the first match. Rerunning its script reproduces the 16 published CSVs; the filename lookup skips studies 54 and 103 in the text-derived analysis. The 110 PDFs themselves are present. To reproduce the revised counts, use the PDF-filename and hash register in this folder, the corrected evidence ledger and the distinct-study count script. Applying this folder is an overlay on Stage 06.
+To reproduce the revised counts, use the PDF-filename and hash register in this folder, the corrected evidence ledger and the distinct-study count script.
 
 `entry_audit.csv` covers all 1,150 entries of the previous passage ledger, including their original classifications, PDF anchors, adjoining text and decisions. `entry_changes.csv` gives all reclassifications and supplemental evidence. `entry_count_changes.csv` compares memberships to the immediately preceding snapshot; `claim_audit.csv` gives the current headline counts against that same snapshot. The two previous change logs describe their dated reviews. Current classifications can be found in `study_register.csv` and `passage_evidence.csv`. The release includes 1,169 passage–label records. The Bonferroni adjustment has its own statistical-procedure dimension in the detailed ledger.
  
 Accuracy includes results authors explicitly report as accuracy for selected experimental subsets; study 69 measures correctness among manually checked seeds already deemed valid. Study 87 contributes a rate for applicable snippets judged against author-defined MRs, without requiring two executed inputs for each judgment. The 32-paper result includes that operationalization and should not be described as 32 reports of paired-execution failure rates. For model counts an explicitly named component, such as study 40's GPT-2 decoder, can qualify. No independent upstream identity is asserted for gateway aliases.
 
-`rebuild_counts.py` summarizes released classifications; it has no PDF-to-classification stage. For semantic decisions, follow the page and the experimental role in the source. The frozen 05d lifecycle table remains part of the underlying repository.
+`rebuild_counts.py` summarizes released classifications; it has no PDF-to-classification stage. For semantic decisions, follow the page and the experimental role in the source.
