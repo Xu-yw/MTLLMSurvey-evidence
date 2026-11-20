@@ -2,6 +2,8 @@
 
 This review covers the 110 archived PDFs in Stage 04. It supplies evidence for model use, metamorphic relations (MRs) and reported evaluation measures. Study numbers follow the Final Labels workbook. PDF pages start at 1 and include any cover or publisher pages.
 
+For the four MR type counts in Comment 2.5(5), see the [MR type evidence and reproduction instructions](mr_type_distribution/README.md).
+
 ## Checking a count
 
 1. Find a category in `study_counts.csv`. Its study numbers, IDs and source records identify what contributed to the total.
